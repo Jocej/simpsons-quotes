@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import logo from './logo.svg'
+import './working.css';
+
 
 class Working extends Component {
     constructor(props) {
@@ -19,7 +22,7 @@ class Working extends Component {
         >
            
         {light.toUpperCase()}</button>
-        <img src= "./logo.svg" />
+        <img src={logo} className={this.state.isWorking ? 'logo animated' : 'logo'} />
         
       </div>
     );

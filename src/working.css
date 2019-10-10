@@ -1,0 +1,17 @@
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+.animated {
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
